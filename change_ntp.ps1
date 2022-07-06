@@ -1,6 +1,6 @@
 connect-VIServer -server vcenter.pt.playtech.corp -User vsphere.local\Administrator -Password XXXXXXXXXXX
 
-$oldntpservers='kiev-dc1.ee.playtech.corp','kiev-dc2.ee.playtech.corp','ntp1.ukraine.ptec','ntp2.ukraine.ptec','ntp2.infra.ptec'
+$oldntpservers='dc1.ee.playtech.corp','dc2.ee.playtech.corp','ntp1.ukraine.ptec','ntp2.ukraine.ptec','ntp2.infra.ptec'
 $newntpservers='kie-dc001.pt.playtech.corp','kie-dc002.pt.playtech.corp'
 foreach($vmhost in (get-vmhost -name ukr0*)){
 #stop ntpd service
